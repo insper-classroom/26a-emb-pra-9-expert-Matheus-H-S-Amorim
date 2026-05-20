@@ -20,11 +20,14 @@ target_link_libraries(pico_emb PRIVATE
     pico_async_context_freertos
     FreeRTOS-Kernel-Heap4
     pico_stdlib
+    hardware_i2c
+    hardware_pwm #mudei aquiiiii
+    Fusion
     )
 # Set the nunber of cores to 1.
 # This defaults to 2 in FreeRTOSConfig_examples_common.h if not defined in here
 target_compile_definitions(pico_emb PRIVATE
-    configNUMBER_OF_CORES=1
+    configNUMBER_OF_CORES=2
     )
 if(PICO_CYW43_SUPPORTED)
     # For led support on pico_w

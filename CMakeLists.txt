@@ -73,3 +73,4 @@ endif()
 
 # Hardware-specific examples in subdirectories:
 add_subdirectory(main)
+add_subdirectory(Fusion)
